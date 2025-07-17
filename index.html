@@ -1,30 +1,52 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-
 <head>
-
-<meta charset="UTF-8" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<title>Site Azure</title>
-
-<link rel="stylesheet" href="style.css" />
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azure Static Web Apps</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
+    <div class="azure-background">
+        <div class="cloud-animation"></div>
+        <div class="cloud-animation delay-1"></div>
+        <div class="cloud-animation delay-2"></div>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <i class="fab fa-microsoft azure-icon"></i>
+            <h1>Bem-vindo ao Azure Static Web Apps</h1>
+            <p class="subtitle">Sua aplicação está no ar com a potência da nuvem Microsoft Azure</p>
+        </div>
+        
+        <button class="azure-button" onclick="mostrarMensagem()">
+            <span>Clique para testar</span>
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <div class="message-box" id="mensagem"></div>
+        
+        <div class="features">
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Rápido</h3>
+                <p>Entrega de conteúdo estático acelerada</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-lock"></i>
+                <h3>Seguro</h3>
+                <p>Proteção integrada contra ameaças</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-infinity"></i>
+                <h3>Escalável</h3>
+                <p>Cresce automaticamente com sua demanda</p>
+            </div>
+        </div>
+    </div>
 
-<h1>Olá, Azure Static Web Apps!</h1>
-
-<button onclick="mostrarMensagem()">Clique aqui</button>
-
-<p id="mensagem"></p>
-
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
